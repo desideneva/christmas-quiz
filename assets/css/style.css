@@ -2,16 +2,16 @@
  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Flex:opsz@8..144&display=swap');@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Flex:opsz@8..144&display=swap');
 
  body {
+    background-image: url(../images/christmas-twig-with-candle-present-boxes.png);
     margin: 0;
-    padding: 0;
+    padding: 100px 0;
     height: 100vh;
-    background-image: url('assets/images/christmas-twig-with-candle-present-boxes.png');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(170, 19, 19);
+    
 }
 
 .container {
@@ -23,15 +23,20 @@ header {
 }
 
 h1 {
+    font-weight: 400;
     font-family: 'Great Vibes', sans-serif;
-    font-size: 3em;
-    margin: 0;
+    font-size: 5em;
+    margin-bottom: auto;
+    padding: 10px;
+    color: rgb(177, 6, 6);
 }
 
 h2 {
     font-family: 'Roboto Flex', sans-serif;
     font-size: 1.5em;
-    margin: 10px 0;
+    margin: 20px 0;
+    padding: 10px;
+
 }
 
 button {
@@ -42,6 +47,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 50px;
 }
 
 button:hover {
