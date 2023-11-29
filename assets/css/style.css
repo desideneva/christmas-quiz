@@ -1,2 +1,49 @@
  /* Google fonts import */
  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Flex:opsz@8..144&display=swap');@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Flex:opsz@8..144&display=swap');
+
+ body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('assets/images/christmas-twig-with-candle-present-boxes.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(170, 19, 19);
+}
+
+.container {
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
