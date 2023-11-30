@@ -1,6 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("playButton").addEventListener("click", function () {
-        // Add your logic to start the quiz when the button is clicked
-        alert("Quiz started! Add your quiz logic here.");
+document.addEventListener("DOMContentLoaded", function() {
+    const playButton = document.getElementById('playButton');
+
+    playButton.addEventListener('click', function() {
+        // Navigate to the quiz.html page
+        window.location.href = 'quiz.html';
     });
 });
