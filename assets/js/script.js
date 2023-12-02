@@ -16,7 +16,8 @@ const questions = [
             { text: "Santa Kris", correct: true},
             { text: "Saint Nicholas", correct: false},
             { text: "Kris Kringle", correct: false},
-        ]
+        ],
+        image: "assets/images/santa-claus.png",
     },
     {
         question: "Which of the following is one of Santa’s reindeer?",
@@ -25,7 +26,8 @@ const questions = [
             { text: "Buddy", correct: false},
             { text: "Rudolph", correct: true},
             { text: "Sven", correct: false},
-        ]
+        ],
+        image: "assets/images/reindeer.png",
 
     },
     {
@@ -35,7 +37,8 @@ const questions = [
             { text: "Denmark", correct: false},
             { text: "Norway", correct: false},
             { text: "Germany", correct: true},
-        ]  
+        ],
+        image: "assets/images/christmas-trees.png", 
     }
 ];
 
@@ -53,16 +56,23 @@ function startQuiz(){
     currentQuestionIndex =0;
     score =0;
     nextButton.innerHTML = "Next Question";
+    resetState();
     showQuestion();
 }
 
 // Function to display the current question
 function showQuestion(){
+    
 // Resets previous question and answers
     resetState();
-    // Get the current question object
+ 
+// Get the current question object
     let currentQuestion = questions[currentQuestionIndex];
-    // Display the question number and text
+
+// Set background image for the question container
+    document.body.style.backgroundImage = `url(${currentQuestion.image})`;
+
+// Display the question number and text
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = `${questionNo}. ${currentQuestion.question}`;
 
@@ -99,23 +109,33 @@ function resetState(){
  * - Displays the next button.
  * @param {Event} e - The click event object.
  */
-function selectAnswer(e){
+
+function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect){
-        selectedBtn.classList.add("correct");
-        score++;
-    } else {
-        selectedBtn.classList.add("incorrect");
+
+    // Highlight correct answer in light green if the wrong answer is selected
+    if (!isCorrect) {
+        const correctBtn = Array.from(answerButtons.children).find(button => button.dataset.correct === "true");
+        if (correctBtn) {
+            correctBtn.classList.add("correct");
+        }
     }
+
+    // Highlight selected answer (either correct or incorrect)
+    selectedBtn.classList.add(isCorrect ? "correct" : "incorrect");
+
+    // Disable all buttons after an answer is selected
     Array.from(answerButtons.children).forEach(button => {
-        if(button.dataset.correct === true){
+        if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
         button.disabled = true;
     });
+
+    // Display the next button
     nextButton.style.display = "block";
- }
+}
 
  /**
  * Displays the final score of the quiz.
@@ -123,7 +143,7 @@ function selectAnswer(e){
  * - Updates the question element with the score.
  * - Displays the "Play Again" button.
  */
- function showScrore(){
+ function showScore(){
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
@@ -140,13 +160,13 @@ function selectAnswer(e){
     if(currentQuestionIndex < questions.length){
         showQuestion();
     } else {
-        showScrore();
+        showScore();
     }
  }
 
- // Event listener for the next button click.
- nextButton.addEventListener("click", ()=>{
-    if(correntQuestionIndex < questions.length){
+ // Event listener for the next button click
+ nextButton.addEventListener("click", () => {
+    if(currentQuestionIndex < questions.length){
         handleNextButton();
     } else {
         startQuiz();

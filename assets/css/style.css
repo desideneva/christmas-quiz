@@ -79,6 +79,14 @@
      color: black;
      font-weight: 600;
  }
+
+ #quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
  .btn {
      background: #fff color: black;
      font-weight: 500;
@@ -125,3 +133,17 @@
  .incorrect {
     background: rgb(219, 89, 89);
  }
+
+ /* Media query for screens smaller than 600px (adjust the breakpoint as needed) */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 20px; /* Add some padding to the body for better mobile display */
+    }
+
+    #quiz-container {
+        width: 100%; /* Make the quiz container full width on smaller screens */
+        margin: 20px auto; /* Adjust margin for better centering */
+        padding: 15px; /* Adjust padding for better spacing */
+    }
+}
+
