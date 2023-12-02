@@ -94,10 +94,14 @@
 
  }
 
- .btn:hover {
+ .btn:hover.btn:hover:not([disabled]) {
     background: #222;
     color: #fff;
 
+ }
+
+ .btn:disabled {
+    cursor: no-drop;
  }
 
  #next-btn {
@@ -111,6 +115,13 @@
     margin: 20px auto 0;
     border-radius: 4px;
     cursor: pointer;
-    display: block;
+    display: none;
 
+ }
+
+ .correct {
+    background: lightgreen;
+ }
+ .incorrect {
+    background: rgb(219, 89, 89);
  }

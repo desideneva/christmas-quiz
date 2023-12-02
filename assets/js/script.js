@@ -41,7 +41,7 @@ const questions = [
 
 // DOM elements
 const questionElement = document.getElementById("question");
-const answerButton = document.getElementById("answer-buttons");
+const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 
 // Variables to track current question index and score
@@ -58,19 +58,99 @@ function startQuiz(){
 
 // Function to display the current question
 function showQuestion(){
+// Resets previous question and answers
+    resetState();
     // Get the current question object
     let currentQuestion = questions[currentQuestionIndex];
     // Display the question number and text
     let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo = "." + currentQuestion.question;
+    questionElement.innerHTML = `${questionNo}. ${currentQuestion.question}`;
 
 // Create buttons for each answer
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
-        answerButton.appendChild(button);
+        answerButtons.appendChild(button);
+        if(answer.correct){
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener("click", selectAnswer);
     });
 }
+
+/**
+ * Resets the state of the quiz.
+ * - Hides the next button.
+ * - Removes all child elements from the answer buttons container.
+ */
+function resetState(){
+    nextButton.style.display = "none";
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+}
+
+/**
+ * Handles the selection of an answer.
+ * - Determines if the selected answer is correct.
+ * - Updates the visual feedback on the selected button.
+ * - Disables all buttons after an answer is selected.
+ * - Displays the next button.
+ * @param {Event} e - The click event object.
+ */
+function selectAnswer(e){
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if(isCorrect){
+        selectedBtn.classList.add("correct");
+        score++;
+    } else {
+        selectedBtn.classList.add("incorrect");
+    }
+    Array.from(answerButtons.children).forEach(button => {
+        if(button.dataset.correct === true){
+            button.classList.add("correct");
+        }
+        button.disabled = true;
+    });
+    nextButton.style.display = "block";
+ }
+
+ /**
+ * Displays the final score of the quiz.
+ * - Resets the quiz state.
+ * - Updates the question element with the score.
+ * - Displays the "Play Again" button.
+ */
+ function showScrore(){
+    resetState();
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
+ }
+
+ /**
+ * Handles the click event on the next button.
+ * - Increments the current question index.
+ * - Shows the next question or displays the final score.
+ */
+ function handleNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
+        showQuestion();
+    } else {
+        showScrore();
+    }
+ }
+
+ // Event listener for the next button click.
+ nextButton.addEventListener("click", ()=>{
+    if(correntQuestionIndex < questions.length){
+        handleNextButton();
+    } else {
+        startQuiz();
+    }
+ });
 
 startQuiz();
