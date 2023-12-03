@@ -81,12 +81,13 @@
  }
 
  #quiz-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+ }
+
  .btn {
      background: #fff color: black;
      font-weight: 500;
@@ -103,47 +104,51 @@
  }
 
  .btn:hover.btn:hover:not([disabled]) {
-    background: #222;
-    color: #fff;
+     background: #222;
+     color: #fff;
 
  }
 
  .btn:disabled {
-    cursor: no-drop;
+     cursor: no-drop;
  }
 
  #next-btn {
-    background: rgb(177, 6, 6);
-    color: #fff;
-    font-weight: 500;
-    font-size: 18px;
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none;
+     background: rgb(177, 6, 6);
+     color: #fff;
+     font-weight: 500;
+     font-size: 18px;
+     width: 150px;
+     border: 0;
+     padding: 10px;
+     margin: 20px auto 0;
+     border-radius: 4px;
+     cursor: pointer;
+     display: none;
 
  }
 
  .correct {
-    background: lightgreen;
+     background: lightgreen;
  }
+
  .incorrect {
-    background: rgb(219, 89, 89);
+     background: rgb(219, 89, 89);
  }
 
  /* Media query for screens smaller than 600px (adjust the breakpoint as needed) */
-@media only screen and (max-width: 600px) {
-    body {
-        padding: 20px; /* Add some padding to the body for better mobile display */
-    }
+ @media only screen and (max-width: 600px) {
+     body {
+         padding: 20px;
+         /* Add some padding to the body for better mobile display */
+     }
 
-    #quiz-container {
-        width: 100%; /* Make the quiz container full width on smaller screens */
-        margin: 20px auto; /* Adjust margin for better centering */
-        padding: 15px; /* Adjust padding for better spacing */
-    }
-}
-
+     #quiz-container {
+         width: 100%;
+         /* Make the quiz container full width on smaller screens */
+         margin: 20px auto;
+         /* Adjust margin for better centering */
+         padding: 15px;
+         /* Adjust padding for better spacing */
+     }
+ }

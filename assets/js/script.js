@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const playButton = document.getElementById('playButton');
 
-    playButton.addEventListener('click', function() {
+    playButton.addEventListener('click', function () {
         // Navigate to the quiz.html page
         window.location.href = 'quiz.html';
     });
@@ -12,20 +12,20 @@ const questions = [
     {
         question: "Which one is NOT another name for Santa Claus?",
         answers: [
-            { text: "Father Christmas", correct: false},
-            { text: "Santa Kris", correct: true},
-            { text: "Saint Nicholas", correct: false},
-            { text: "Kris Kringle", correct: false},
+            { text: "Father Christmas", correct: false },
+            { text: "Santa Kris", correct: true },
+            { text: "Saint Nicholas", correct: false },
+            { text: "Kris Kringle", correct: false },
         ],
         image: "assets/images/santa-claus.png",
     },
     {
         question: "Which of the following is one of Santa’s reindeer?",
         answers: [
-            { text: "Jingle", correct: false},
-            { text: "Buddy", correct: false},
-            { text: "Rudolph", correct: true},
-            { text: "Sven", correct: false},
+            { text: "Jingle", correct: false },
+            { text: "Buddy", correct: false },
+            { text: "Rudolph", correct: true },
+            { text: "Sven", correct: false },
         ],
         image: "assets/images/reindeer.png",
 
@@ -33,12 +33,12 @@ const questions = [
     {
         question: "What country did Christmas Trees originate from?",
         answers: [
-            { text: "England", correct: false},
-            { text: "Denmark", correct: false},
-            { text: "Norway", correct: false},
-            { text: "Germany", correct: true},
+            { text: "England", correct: false },
+            { text: "Denmark", correct: false },
+            { text: "Norway", correct: false },
+            { text: "Germany", correct: true },
         ],
-        image: "assets/images/christmas-trees.png", 
+        image: "assets/images/christmas-trees.png",
     }
 ];
 
@@ -51,38 +51,38 @@ const nextButton = document.getElementById("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
 
- // Function to start the quiz
-function startQuiz(){
-    currentQuestionIndex =0;
-    score =0;
+// Function to start the quiz
+function startQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
     nextButton.innerHTML = "Next Question";
     resetState();
     showQuestion();
 }
 
 // Function to display the current question
-function showQuestion(){
-    
-// Resets previous question and answers
+function showQuestion() {
+
+    // Resets previous question and answers
     resetState();
- 
-// Get the current question object
+
+    // Get the current question object
     let currentQuestion = questions[currentQuestionIndex];
 
-// Set background image for the question container
+    // Set background image for the question container
     document.body.style.backgroundImage = `url(${currentQuestion.image})`;
 
-// Display the question number and text
+    // Display the question number and text
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = `${questionNo}. ${currentQuestion.question}`;
 
-// Create buttons for each answer
+    // Create buttons for each answer
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButtons.appendChild(button);
-        if(answer.correct){
+        if (answer.correct) {
             button.dataset.correct = answer.correct
         }
         button.addEventListener("click", selectAnswer);
@@ -94,9 +94,9 @@ function showQuestion(){
  * - Hides the next button.
  * - Removes all child elements from the answer buttons container.
  */
-function resetState(){
+function resetState() {
     nextButton.style.display = "none";
-    while(answerButtons.firstChild){
+    while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
@@ -133,44 +133,60 @@ function selectAnswer(e) {
         button.disabled = true;
     });
 
+    // Update the score if the selected answer is correct
+    if (isCorrect) {
+        score++;
+    }
+
     // Display the next button
     nextButton.style.display = "block";
 }
 
- /**
- * Displays the final score of the quiz.
- * - Resets the quiz state.
- * - Updates the question element with the score.
- * - Displays the "Play Again" button.
- */
- function showScore(){
+
+/**
+* Displays the final score of the quiz.
+* - Resets the quiz state.
+* - Updates the question element with the score.
+* - Displays the "Play Again" button.
+*/
+function showScore() {
     resetState();
+
+    // Set background image or color for the score screen
+    document.body.style.backgroundImage = 'url("assets/images/merry-christmas.jpg")';
+
+    // Update the question element with the score
+    if (score === questions.length) {
+        // Display a congratulatory message for a perfect score
+        questionElement.innerHTML = "Wow... 7 out of 7! Congratulations! You made it!";
+    } else {
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
- }
+    }
+}
 
- /**
- * Handles the click event on the next button.
- * - Increments the current question index.
- * - Shows the next question or displays the final score.
- */
- function handleNextButton(){
+/**
+* Handles the click event on the next button.
+* - Increments the current question index.
+* - Shows the next question or displays the final score.
+*/
+function handleNextButton() {
     currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length){
+    if (currentQuestionIndex < questions.length) {
         showQuestion();
     } else {
         showScore();
     }
- }
+}
 
- // Event listener for the next button click
- nextButton.addEventListener("click", () => {
-    if(currentQuestionIndex < questions.length){
+// Event listener for the next button click
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
         handleNextButton();
     } else {
         startQuiz();
     }
- });
+});
 
-startQuiz();
+startQuiz();             
