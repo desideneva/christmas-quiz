@@ -62,14 +62,14 @@
      padding: 0;
      font-family: 'Roboto Flex', sans-serif;
      box-sizing: border-box;
-     background: #45a049;
+     background-image: url(../images/santa-christmas.png);
  }
 
  .quiz {
      background: #fff;
      width: 90%;
      max-width: 600px;
-     margin: 100px auto 0;
+     margin: 100px 30px 0;
      border-radius: 10px;
      padding: 30px;
  }
