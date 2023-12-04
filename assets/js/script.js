@@ -44,7 +44,7 @@ const questions = [
         question: "Who delivers Christmas presents to children in the United Kingdom?",
         answers: [
             { text: "Christmas Fairy", correct: false },
-            { text: "Snowwhite", correct: false },
+            { text: "Snow White", correct: false },
             { text: "Santa Claus", correct: true },
             { text: "Saint George", correct: false },
         ],
@@ -68,7 +68,7 @@ const questions = [
             { text: "Nazareth", correct: false },
             { text: "Bethlehem", correct: true },
         ],
-        image: "assets/images/snowflakes.png",
+        image: "assets/images/stars.png",
     },
     {
         question: "How do you say Merry Christmas in Spanish?",
@@ -78,7 +78,7 @@ const questions = [
             { text: "Feliz Ano Nuevo", correct: false },
             { text: "Feliz Compleanos", correct: false },
         ],
-        image: "assets/images/christmas-balls.png",
+        image: "assets/images/merry-xmas-world.png",
     }
 
 ];
