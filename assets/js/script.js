@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // Navigate to the quiz.html page
         window.location.href = 'quiz.html';
     });
+    // Add an event listener for the EXIT button
+    const exitButton = document.getElementById('exitButton');
+    exitButton.addEventListener('click', function() {
+        // Navigate back to the front page
+        window.location.href = 'index.html'; // Replace 'index.html' with the actual front page filename
+    });
 });
 
 // Array of questions, each with a question and an array of answers
@@ -73,7 +79,7 @@ const questions = [
     {
         question: "How do you say Merry Christmas in Spanish?",
         answers: [
-            { text: "Buenos dias", correct: false },
+            { text: "Feliz Natal", correct: false },
             { text: "Feliz Navidad", correct: true },
             { text: "Feliz Ano Nuevo", correct: false },
             { text: "Feliz Compleanos", correct: false },
@@ -87,6 +93,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const exitButton = document.getElementById("exitButton")
 
 // Variables to track current question index and score
 let currentQuestionIndex = 0;
@@ -99,6 +106,12 @@ function startQuiz() {
     nextButton.innerHTML = "Next Question";
     resetState();
     showQuestion();
+}
+
+// Function to handle the exit action
+function handleExit() {
+    // Navigate back to the front page
+    window.location.href = 'index.html'; // Replace 'index.html' with the actual front page filename
 }
 
 // Function to display the current question
@@ -200,11 +213,14 @@ function showScore() {
     if (score === questions.length) {
         // Display a congratulatory message for a perfect score
         questionElement.innerHTML = "Wow... 7 out of 7! Congratulations! You made it!";
+        // Display the "Exit" button
+        exitButton.style.display = "block";
     } else {
         questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
         nextButton.innerHTML = "Play Again";
         nextButton.style.display = "block";
     }
+
 }
 
 /**
@@ -229,5 +245,9 @@ nextButton.addEventListener("click", () => {
         startQuiz();
     }
 });
+
+// Event listener for the EXIT button click
+exitButton.addEventListener('click', handleExit);
+
 
 startQuiz();             
