@@ -80,6 +80,7 @@ const questions = [
         ],
         image: "assets/images/christmas-balls.png",
     }
+
 ];
 
 // DOM elements
@@ -192,6 +193,9 @@ function selectAnswer(e) {
 function showScore() {
     resetState();
 
+    // Set background image for the score screen
+    document.body.style.backgroundImage = `url("assets/images/santa-christmas.png")`;
+    
     // Update the question element with the score
     if (score === questions.length) {
         // Display a congratulatory message for a perfect score
