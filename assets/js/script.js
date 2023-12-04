@@ -39,6 +39,46 @@ const questions = [
             { text: "Germany", correct: true },
         ],
         image: "assets/images/christmas-trees.png",
+    },
+    {
+        question: "Who delivers Christmas presents to children in the United Kingdom?",
+        answers: [
+            { text: "Christmas Fairy", correct: false },
+            { text: "Snowwhite", correct: false },
+            { text: "Santa Claus", correct: true },
+            { text: "Saint George", correct: false },
+        ],
+        image: "assets/images/xmas-gifts.png",
+    },
+    {
+        question: "What are you supposed to do when you find yourself under the mistletoe?",
+        answers: [
+            { text: "Kiss", correct: true },
+            { text: "Hug", correct: false },
+            { text: "Dance", correct: false },
+            { text: "Bow", correct: false },
+        ],
+        image: "assets/images/xmas-sparks.png",
+    },
+    {
+        question: "In what town was Jesus born?",
+        answers: [
+            { text: "Jerusalem", correct: false },
+            { text: "Tel Aviv", correct: false },
+            { text: "Nazareth", correct: false },
+            { text: "Bethlehem", correct: true },
+        ],
+        image: "assets/images/snowflakes.png",
+    },
+    {
+        question: "How do you say Merry Christmas in Spanish?",
+        answers: [
+            { text: "Buenos dias", correct: false },
+            { text: "Feliz Navidad", correct: true },
+            { text: "Feliz Ano Nuevo", correct: false },
+            { text: "Feliz Compleanos", correct: false },
+        ],
+        image: "assets/images/christmas-balls.png",
     }
 ];
 
