@@ -57,7 +57,7 @@
  }
 
  /* Styling the guiz page */
- .second_body {
+ .second-body {
      margin: 0;
      padding: 0;
      font-family: 'Roboto Flex', sans-serif;
@@ -135,6 +135,7 @@
  .incorrect {
      background: rgb(219, 89, 89);
  }
+
 
  /* Media query for screens smaller than 600px (adjust the breakpoint as needed) */
  @media only screen and (max-width: 600px) {

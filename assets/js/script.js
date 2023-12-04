@@ -152,8 +152,11 @@ function selectAnswer(e) {
 function showScore() {
     resetState();
 
-    // Set background image or color for the score screen
-    document.body.style.backgroundImage = 'url("assets/images/merry-christmas.png")';
+    // Set background image or color for the score screen 
+    document.body.style.backgroundImage = 'url("assets/images/merry-christmas2.jpg")';
+    document.body.style.backgroundSize = 'cover'; // or 'contain' as needed
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundPosition = 'center'; // optional, centers the image
 
     // Update the question element with the score
     if (score === questions.length) {
