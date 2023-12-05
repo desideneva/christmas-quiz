@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     // Add an event listener for the EXIT button
     const exitButton = document.getElementById('exitButton');
-    exitButton.addEventListener('click', function() {
+    exitButton.addEventListener('click', function () {
         // Navigate back to the front page
         window.location.href = 'index.html'; // Replace 'index.html' with the actual front page filename
     });
@@ -201,25 +201,28 @@ function selectAnswer(e) {
 * Displays the final score of the quiz.
 * - Resets the quiz state.
 * - Updates the question element with the score.
-* - Displays the "Play Again" button.
+* - Displays the "Play Again" and "EXIT" buttons.
 */
 function showScore() {
     resetState();
 
     // Set background image for the score screen
     document.body.style.backgroundImage = `url("assets/images/santa-christmas.png")`;
+
+        // Update the question element with the score
+        if (score === questions.length) {
+            // Display a congratulatory message for a perfect score
+            questionElement.innerHTML = "Wow... 7 out of 7! Congratulations! You made it!";
+            // Display the "Exit" button
+            exitButton.style.display = "block";
+        } else {
+            questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+            nextButton.innerHTML = "Play Again";
+            nextButton.style.display = "block";
+            exitButton.innerHTML = "EXIT"
+            exitButton.style.display = "block";
+        }
     
-    // Update the question element with the score
-    if (score === questions.length) {
-        // Display a congratulatory message for a perfect score
-        questionElement.innerHTML = "Wow... 7 out of 7! Congratulations! You made it!";
-        // Display the "Exit" button
-        exitButton.style.display = "block";
-    } else {
-        questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
-        nextButton.innerHTML = "Play Again";
-        nextButton.style.display = "block";
-    }
 
 }
 
