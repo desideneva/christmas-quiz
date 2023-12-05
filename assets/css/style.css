@@ -109,6 +109,7 @@
      cursor: no-drop;
  }
 
+
  #next-btn {
      background: rgb(177, 6, 6);
      color: #fff;
@@ -133,20 +134,28 @@
  }
 
  #exitButton {
-    background: red;
-    color: white;
-    font-weight: 500;
-    font-size: 30px;
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
+     background: red;
+     color: white;
+     font-weight: 500;
+     font-size: 30px;
+     width: 150px;
+     border: 0;
+     padding: 10px;
+     margin: 20px auto 0;
+     border-radius: 5px;
+     cursor: pointer;
+     display: none;
 
  }
 
  #exitButton:hover {
      background-color: #45a049;
+ }
+
+ .box {
+    text-align: center;
+ }
+
+ .error-img {
+    width: 20%;
  }

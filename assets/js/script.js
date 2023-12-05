@@ -209,20 +209,20 @@ function showScore() {
     // Set background image for the score screen
     document.body.style.backgroundImage = `url("assets/images/santa-christmas.png")`;
 
-        // Update the question element with the score
-        if (score === questions.length) {
-            // Display a congratulatory message for a perfect score
-            questionElement.innerHTML = "Wow... 7 out of 7! Congratulations! You made it!";
-            // Display the "Exit" button
-            exitButton.style.display = "block";
-        } else {
-            questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
-            nextButton.innerHTML = "Play Again";
-            nextButton.style.display = "block";
-            exitButton.innerHTML = "EXIT"
-            exitButton.style.display = "block";
-        }
-    
+    // Update the question element with the score
+    if (score === questions.length) {
+        // Display a congratulatory message for a perfect score
+        questionElement.innerHTML = "Wow... 7 out of 7! Congratulations! You made it!";
+        // Display the "Exit" button
+        exitButton.style.display = "block";
+    } else {
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+        nextButton.innerHTML = "Play Again";
+        nextButton.style.display = "block";
+        exitButton.innerHTML = "EXIT"
+        exitButton.style.display = "block";
+    }
+
 
 }
 
