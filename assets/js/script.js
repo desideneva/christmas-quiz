@@ -1,17 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const playButton = document.getElementById('playButton');
 
-    playButton.addEventListener('click', function () {
-        // Navigate to the quiz.html page
-        window.location.href = 'quiz.html';
-    });
     // Add an event listener for the EXIT button
     const exitButton = document.getElementById('exitButton');
     exitButton.addEventListener('click', function () {
         // Navigate back to the front page
         window.location.href = 'index.html'; // Replace 'index.html' with the actual front page filename
     });
-});
 
 // Array of questions, each with a question and an array of answers
 const questions = [
