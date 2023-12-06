@@ -70,6 +70,36 @@ const questions = [
         image: "assets/images/stars.png",
     },
     {
+        question: "What was Frosty the Snowman's nose made out?",
+        answers: [
+            { text: "Carrot", correct: false },
+            { text: "Button", correct: true },
+            { text: "Sugar cane", correct: false },
+            { text: "Coal", correct: false },
+        ],
+        image: "assets/images/snowman.png",
+    },
+    {
+        question: "What Christmas treat became popular due to a Brothers Grimm Story?",
+        answers: [
+            { text: "Sticky Toffee Pudding", correct: false },
+            { text: "Mince Pie", correct: false },
+            { text: "Gingerbread House", correct: true },
+            { text: "Christmas Pudding", correct: false },
+        ],
+        image: "assets/images/gingerbread-house.png",
+    },
+    {
+        question: "What popular Christmas song was actually written for Thanksgiving?",
+        answers: [
+            { text: "It`s the most wonderful time of the year", correct: false },
+            { text: "One more sleep", correct: false },
+            { text: "Jingle Bells", correct: true },
+            { text: "Underneath the tree", correct: false },
+        ],
+        image: "assets/images/bells.png",
+    },
+    {
         question: "How do you say Merry Christmas in Spanish?",
         answers: [
             { text: "Feliz Natal", correct: false },
@@ -205,7 +235,7 @@ function showScore() {
     // Update the question element with the score
     if (score === questions.length) {
         // Display a congratulatory message for a perfect score
-        questionElement.innerHTML = "Wow... 7 out of 7! Congratulations! You made it!";
+        questionElement.innerHTML = "Wow... 10 out of 10! Congratulations! You made it!";
         // Display the "Exit" button
         exitButton.style.display = "block";
     } else {
