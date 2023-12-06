@@ -1,11 +1,11 @@
-
+document.addEventListener("DOMContentLoaded", function () {
     // Add an event listener for the EXIT button
     const exitButton = document.getElementById('exitButton');
     exitButton.addEventListener('click', function () {
-        // Navigate back to the front page
+         // Navigate back to the front page
         window.location.href = 'index.html'; // Replace 'index.html' with the actual front page filename
-    });
-
+    });   
+});
 // Array of questions, each with a question and an array of answers
 const questions = [
     {
@@ -162,7 +162,7 @@ function showQuestion() {
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
-        button.addEventListener("click", selectAnswer);
+        button.addEventListener("click", selectAnswer);   
     });
 }
 
@@ -245,8 +245,6 @@ function showScore() {
         exitButton.innerHTML = "EXIT"
         exitButton.style.display = "block";
     }
-
-
 }
 
 /**
