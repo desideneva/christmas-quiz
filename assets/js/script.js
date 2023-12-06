@@ -178,6 +178,7 @@ function resetState() {
     }
 }
 
+
 /**
  * Handles the selection of an answer.
  * - Determines if the selected answer is correct.

@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
             "  - If the wrong answer is chosen, it will be highlighted in red, and the correct answer will be highlighted in green.",
             "  - You have only one attempt to select an answer.",
             "  - Continue to the next question by clicking the 'Next Question' button.",
+            "  - You cannot skip any quetsion.",
+            "  - You cannot go back to past question.",
             "  - To exit the quiz, click the 'EXIT' button.",
             "  - Have fun! :)"
         ];
