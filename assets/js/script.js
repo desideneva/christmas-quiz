@@ -116,11 +116,17 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-const exitButton = document.getElementById("exitButton")
+const exitButton = document.getElementById("exitButton");
+const scoreDisplay = document.getElementById("scoreDisplay");
 
 // Variables to track current question index and score
 let currentQuestionIndex = 0;
 let score = 0;
+
+// Function to update the score display
+function updateScoreDisplay() {
+    scoreDisplay.textContent = `Correct ${score}/${questions.length}`;
+} 
 
 // Function to start the quiz
 function startQuiz() {
@@ -129,6 +135,7 @@ function startQuiz() {
     nextButton.innerHTML = "Next Question";
     resetState();
     showQuestion();
+    updateScoreDisplay();
 }
 
 // Function to handle the exit action
@@ -214,6 +221,7 @@ function selectAnswer(e) {
     // Update the score if the selected answer is correct
     if (isCorrect) {
         score++;
+        updateScoreDisplay();
     }
 
     // Display the next button

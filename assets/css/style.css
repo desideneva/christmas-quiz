@@ -99,7 +99,8 @@
  }
 
  .btn {
-     background: #fff color: black;
+     background: #fff;
+     color: black;
      font-weight: 500;
      font-size: 20px;
      width: 100%;
