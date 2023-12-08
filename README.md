@@ -1,5 +1,7 @@
 # Christmas Quiz
 
+Visit the deployed site: [Christmas Quiz](https://desideneva.github.io/christmas-quiz/)
+
 ## INITIAL DESIGN
  For my project, I created a fun and easy-to-use website all about Christmas. It's designed for people of all ages who want to test their knowledge of holiday traditions and have a good time.
 
@@ -38,5 +40,4 @@ In summary, the Christmas Quiz project aims to provide a delightful and educatio
 
 
 
-User
-That is very nice but can you write it in more simplier way? 
+ 
