@@ -55,6 +55,31 @@ The Christmas Quiz website is made for everyone, whether you are new to Christma
 
 No matter where you are on your Christmas journey, the website aims to make your experience merry and bright!
 
+ ## USER STORIES
+
+### Client Goals
+
+* The site needs to be easily accessible.
+* The navigation menu needs to be simple to use on a range of devices, including desktop, tablet and mobile.
+* Maneuvering around the quiz should be straightforward.
+* The quiz should be informative and all the text should be easy to read.
+* The images should be clear and not stretched or squashed.
+
+#### First Time Visitors
+
+* I want it to be easy to understand how to navigate throughout the quiz.
+* I want the content to be easily read and understandable.
+
+#### Returning User
+
+* To enjoy the Christmas quiz for a festive mood boost.
+* To share the quiz with others for a fun and informative experience.
+* To recommend the site to friends and family.
+* To gather information for projects.
+                                                                                                                                                             
+
+
+
 
 
 
