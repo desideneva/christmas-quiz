@@ -37,6 +37,30 @@ Visit the deployed site: [Christmas Quiz](https://desideneva.github.io/christmas
 
 In summary, the Christmas Quiz project aims to provide a delightful and educational experience for individuals of all ages, celebrating the spirit of the holiday season through an interactive and visually appealing platform.
 
+## USER EXPERIENCE
+
+The Christmas Quiz website is made for everyone, whether you are new to Christmas or a seasoned holiday lover.
+
+### New to Christmas:
+
+* If you are just discovering Christmas traditions, the website gently introduces you to the festive magic without overwhelming details.
+
+### Casual Christmas Fans:
+
+* For those who know a bit about Christmas, the quiz is a fun way to learn more and enjoy the holiday spirit.
+
+### Christmas Enthusiasts:
+
+* If you're a Christmas expert, the quiz is a cheerful refresher, letting you test your knowledge and relish in the joy of the season.
+
+No matter where you are on your Christmas journey, the website aims to make your experience merry and bright!
+
+
+
+
+
+
+
 
 
 
