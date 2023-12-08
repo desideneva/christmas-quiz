@@ -109,6 +109,38 @@ Here are some additional features you can consider adding to make your Christmas
 
 * Incorporate a hint or clue system for users who may find certain questions challenging. They can use hints in exchange for a slight reduction in points.
 
+## SOLVED BUGS
+
+### Button Display Issue:
+
+* Bug: Buttons were not displaying correctly on certain screens, causing layout problems.
+
+* Solution: Adjusted the CSS styling for buttons and container elements to ensure proper positioning and display across various screen sizes.
+
+### Score Display Not Updating:
+
+* Bug: The score display was not updating correctly after each question.
+
+* Solution: Implemented a function (updateScoreDisplay()) to dynamically update the score display, ensuring it accurately reflects the user's progress.
+
+### Background Image not Changing:
+
+* Bug: The background image for each question screen was not updating as intended.
+
+* Solution: Modified the logic in the showQuestion() function to correctly set the background image based on the current question.
+
+### Next Button Displaying on Score Screen:
+
+* Bug: The "Next Question" button was incorrectly displaying on the score screen.
+
+* Solution: Adjusted the logic in the handleNextButton() function to differentiate between displaying the next question and the play again option.
+
+### Scoring Logic Issue:
+
+* Bug: In some cases, the scoring logic was not accurately counting correct answers.
+
+* Solution: Reviewed and corrected the scoring logic in the selectAnswer() function, ensuring points were correctly awarded for correct answers.
+
 
 
 
