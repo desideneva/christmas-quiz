@@ -123,12 +123,12 @@ const scoreDisplay = document.getElementById("scoreDisplay");
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Function to update the score display
+/** Function to update the score display */ 
 function updateScoreDisplay() {
     scoreDisplay.textContent = `Correct ${score}/${questions.length}`;
 } 
 
-// Function to start the quiz
+/** Function to start the quiz */
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -138,13 +138,13 @@ function startQuiz() {
     updateScoreDisplay();
 }
 
-// Function to handle the exit action
+/** Function to handle the exit action */
 function handleExit() {
     // Navigate back to the front page
     window.location.href = 'index.html'; // Replace 'index.html' with the actual front page filename
 }
 
-// Function to display the current question
+/** Function to display the current question */
 function showQuestion() {
 
     // Resets previous question and answers
@@ -194,7 +194,7 @@ function resetState() {
  * - Displays the next button.
  * @param {Event} e - The click event object.
  */
-
+/** Function to handle the selection of an answer */
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
