@@ -1,4 +1,5 @@
 # Christmas Quiz
+![Final project image home page](assets/docs/responsive-screens.PNG)
 
 Visit the deployed site: [Christmas Quiz](https://desideneva.github.io/christmas-quiz/)
 
