@@ -191,6 +191,66 @@ Here are some additional features you can consider adding to make your Christmas
 * Solution: Reviewed and corrected the scoring logic in the selectAnswer() function, ensuring points were correctly awarded for correct answers.
 
 
+## TECHNOLOGIES USED
+### Languages
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+### Version Control
+
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Gitpod](https://img.shields.io/badge/gitpod-f06611.svg?style=for-the-badge&logo=gitpod&logoColor=white)
+
+### _Browsers_
+
+![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
+![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
+![Edge](https://img.shields.io/badge/Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white)
+ 
+### _Site Deployment_
+
+![GitHub Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+
+## DEPLOYMENT
+
+### Initial Deployment
+
+This site was deployed using GitHub Pages with the following steps below:
+
+1. Login or Sign Up to [GitHub](www.github.com).
+2. Create a new repository named "taste-of-bulgaria".
+3. Once created, click on "Settings" on the navigation bar under the repository title.
+4. Click on "Pages", on the left-hand side below Secrets.
+5. Under "Source", choose which branch you wish to deploy, In most cases, it will be "main".
+6. Choose which folder to deploy from, generally from "/root".
+7. Click "Save", then wait for it to be deployed. It may take some time for the page to be fully deployed.
+8. The URL will be displayed above the "source" section in GitHub Pages.
+
+### How to Fork a Repository
+
+If you need to make a copy of a repository:
+
+1. Login or Sign Up to [GitHub](www.github.com).
+2. On GitHub, go to [desideneva/taste-of-bulgaria](desideneva/taste-of-bulgaria).
+3. In the top right corner, click "Fork".
+
+### How to Make a Local Clone
+
+If you need to make a local clone:
+
+1. Login to [GitHub](www.github.com).
+2. Under the repository name, above the list of files, click "Code".
+3. Here you can either Clone or Download the repository.
+4. You should close the repository using HTTPS, clicking on the icon to copy the link.
+5. Open Git Bash.
+6. Change the current working directory to the new location, where you want the cloned directory to be.
+7. Type git clone and then paste the URL you copied in step 4.
+8. Press Enter, and your local clone will be created.
+
+
+
+
 
 
 
