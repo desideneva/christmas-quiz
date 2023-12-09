@@ -78,6 +78,54 @@ No matter where you are on your Christmas journey, the website aims to make your
 * To recommend the site to friends and family.
 * To gather information for projects.
 
+## EXISTING FEATURES
+
+### The Front Page Image
+
+* The front page image features a festive setting with a Christmas twig, a candle, and wrapped presents. It radiates the cozy and joyful atmosphere of the holiday season, creating a warm welcome for visitors.
+ 
+![Front Page](assets/docs/front-page.PNG)
+
+### The PLAY Button
+
+* The play button is there to catch your attention and encourages you to click on it. When you hover over it, the color changes in green, giving you a hint that it's clickable and ready for you to start something fun, like a Christmas quiz.
+
+![PLAY Button](assets/docs/play-btn-hovereffect.png)
+
+### The Rules Button
+
+* The rules button is like a guidebook. When you hover over it, it changes the background shade. Clicking it reveals a pop-up that explains what you need to know before diving into the Christmas quiz. It's like a friendly heads-up before you begin.
+
+![Rules Button](assets/docs/rules-popup.PNG)
+
+### The Quiz Questions
+
+* The quiz consists of 10 festive questions, with each question presented on a separate screen for users to answer. The EXIT button on each question screen gives an option for users to leave the quiz at any point and return to the front page. It provides flexibility for participants who may want to exit the quiz before completing all the questions.
+
+![The Questions](assets/docs/quiestion1.PNG)
+
+* In the quiz, when the correct answer is selected, it lights up in green, giving positive feedback. The "Next Question" button stays hidden until an answer is chosen. Once selected, it becomes visible, allowing the user to proceed to the next question.  
+
+![The Questions](assets/docs/question2.PNG)
+
+* If you pick the wrong answer, it lights up in red and the correct one shows up in green, helping you learn. Your score is always visible at the bottom-left, so you can track your progress easily. 
+
+![The Questions](assets/docs/question3.PNG)
+
+* On the final score page, your quiz result is summarized, providing options to either play the quiz once more to improve your performance or exit, with the opportunity to return later.
+
+![The Score Page](assets/docs/score-page.PNG)
+
+* On the final score page, upon achieving the maximum score, a congratulatory message is displayed, accompanied by an option to exit the quiz with satisfaction.
+
+![The Full Score Page](assets/docs/fullscore-page.PNG)
+
+### The 404 Page
+
+* This page is typically designed to maintain the website's aesthetics. The 404 error page informs users that the requested web page was not found. It helps guide them back to the site's main content.
+
+![The 404 Page](assets/docs/404-page.PNG)
+
 ## FEATURES TO IMPLEMENT
 
 Here are some additional features you can consider adding to make your Christmas quiz more entertaining:

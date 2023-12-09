@@ -13,7 +13,6 @@
      display: flex;
      align-items: center;
      justify-content: center;
-
  }
 
  .container {
@@ -38,7 +37,6 @@
      font-size: 1.5em;
      margin: 20px 0;
      padding: 10px;
-
  }
 
  #playButton {
@@ -57,13 +55,13 @@
  }
 
  #rulesButton {
-    font-size: 1.3em;
-    padding: 10px 20px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer; 
+     font-size: 1.3em;
+     padding: 10px 20px;
+     background-color: red;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
  }
 
  #rulesButton:hover {
@@ -90,7 +88,6 @@
      flex-direction: column;
      align-items: center;
      justify-content: center;
-
  }
 
  .quiz h2 {
@@ -112,13 +109,11 @@
      border-radius: 4px;
      cursor: pointer;
      transition: all 0.3s;
-
  }
 
  .btn:hover.btn:hover:not([disabled]) {
      background: #222;
      color: #fff;
-
  }
 
  .btn:disabled {
@@ -137,7 +132,6 @@
      border-radius: 4px;
      cursor: pointer;
      display: none;
-
  }
 
  .correct {
@@ -160,7 +154,6 @@
      border-radius: 5px;
      cursor: pointer;
      display: block;
-
  }
 
  #exitButton:hover {

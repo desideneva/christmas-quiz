@@ -2,10 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add an event listener for the EXIT button
     const exitButton = document.getElementById('exitButton');
     exitButton.addEventListener('click', function () {
-         // Navigate back to the front page
+        // Navigate back to the front page
         window.location.href = 'index.html'; // Replace 'index.html' with the actual front page filename
-    });   
+    });
 });
+
 // Array of questions, each with a question and an array of answers
 const questions = [
     {
@@ -123,10 +124,10 @@ const scoreDisplay = document.getElementById("scoreDisplay");
 let currentQuestionIndex = 0;
 let score = 0;
 
-/** Function to update the score display */ 
+/** Function to update the score display */
 function updateScoreDisplay() {
     scoreDisplay.textContent = `Correct ${score}/${questions.length}`;
-} 
+}
 
 /** Function to start the quiz */
 function startQuiz() {
@@ -167,9 +168,9 @@ function showQuestion() {
         button.classList.add("btn");
         answerButtons.appendChild(button);
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener("click", selectAnswer);   
+        button.addEventListener("click", selectAnswer);
     });
 }
 
@@ -184,7 +185,6 @@ function resetState() {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
-
 
 /**
  * Handles the selection of an answer.
@@ -228,12 +228,13 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
-
 /**
 * Displays the final score of the quiz.
 * - Resets the quiz state.
+* Displays the final score of the quiz.
+* - Resets the quiz state.
 * - Updates the question element with the score.
-* - Displays the "Play Again" and "EXIT" buttons.
+* - Displays the "Play Again" button.
 */
 function showScore() {
     resetState();
@@ -251,7 +252,7 @@ function showScore() {
         questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
         nextButton.innerHTML = "Play Again";
         nextButton.style.display = "block";
-        exitButton.innerHTML = "EXIT"
+        exitButton.innerHTML = "EXIT";
         exitButton.style.display = "block";
     }
 }
@@ -281,6 +282,5 @@ nextButton.addEventListener("click", () => {
 
 // Event listener for the EXIT button click
 exitButton.addEventListener('click', handleExit);
-
 
 startQuiz();             
