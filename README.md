@@ -315,6 +315,10 @@ The W3C Markup and CSS Validators were used to validate my project to make sure 
   
    ![CSS test](assets/docs/css-validator.PNG)
 
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+   ![JavaScript](assets/docs/js-validation.PNG)
+
 ### Lighthouse Testing 
 
 * Desktop
