@@ -359,6 +359,35 @@ The W3C Markup and CSS Validators were used to validate my project to make sure 
 * I ensured the site had all the relevant meta tags needed.
 * All font sizes are legible on all screen sizes.
 
+## CREDITS
+
+### Content
+
+The main guidance and instructions in this project were from [Code Institute](https://codeinstitute.net)
+
+* The main structure of the quiz and the code were taken from the following YouTube tutorials:
+
+  https://www.youtube.com/watch?v=PBcqGxrr9g8&t=22s
+  https://www.youtube.com/watch?v=WiLTsxjCmWQ
+  https://www.youtube.com/watch?v=WHHYz8rZmDU
+  
+* The Favicon was taken from [Favicon](https://icons8.com/icons/set/favicon)
+
+* The fonts used in the project were imported from [Google Fonts](https://fonts.google.com/)
+
+### Media
+
+* All background images were taken from [FREEP!K](https://www.freepik.com/search?format=search&page=5&query=traditional+restaurant+background)
+
+## ACKNOWLEDGEMENTS
+
+* I would like to give a big thanks to Emanuel Silva from [Slack](https://slack.com/intl/en-gb/) for all his help, effort, guidance and patience he has provided during this project.
+
+* I would also like to thank my mentor Daisy for all her support, understanding, advice and for explaining things to me when I did not understand.
+
+
+
+
 
 
 
