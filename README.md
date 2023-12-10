@@ -256,8 +256,100 @@ If you need to make a local clone:
 7. Type git clone and then paste the URL you copied in step 4.
 8. Press Enter, and your local clone will be created.
 
+## TESTING
 
+Every aspect of the project was tested on the browsers below.
 
+![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
+![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
+![Edge](https://img.shields.io/badge/Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white)
+
+### User Testing
+
+* The navigation menu needs to be simple to use on a range of devices, including desktop, tablet and mobile.
+
+  * The navigation buttons are visible on all pages with an indicator to show which question the user is on.
+  * The navigation buttons are easy to read and easy to understand what each button does.
+
+* Maneuvering around the site should be simple and straightforward.  
+
+  * Everything is laid out in a clear manner that is simple to use.
+   
+* The images should be clear and not stretched or squashed.
+
+  * All images are visibly clear on all pages.
+
+### Styling and Layout
+
+| Expected    | Result |
+| :---------: | :----: |
+| Ensure main page loads correctly | Pass |
+| Ensure all pages load correctly and functioning as expected | Pass |
+| Ensure all backgrounds images load correctly | Pass |
+
+### Responsiveness
+
+| Page | Images and Content Responsive | Text Content Readable    |
+| :--: |:----------------------------: | :----------------------: |
+| Home Page | Pass | Pass |
+| Questions Pages | Pass | Pass |
+| Score Page | Pass | Pass |
+
+### Code Validators
+
+The W3C Markup and CSS Validators were used to validate my project to make sure there were no errors within the site. 
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+
+ * Home page
+ ![HTML Home page test](assets/docs/index.html-validator.PNG)
+
+ * Quiz pages
+ ![HTML Quiz pages](assets/docs/quiz.html-validator.PNG)
+
+  * 404 Error page
+ ![HTML 404 Error page](assets/docs/404.html-validator.PNG)
+
+ 
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+  
+   ![CSS test](assets/docs/css-validator.PNG)
+
+### Lighthouse Testing 
+
+* Desktop
+
+![Hope page results](assets/docs/front-page-desktop.PNG)
+
+![Quiz pages results](assets/docs/questions-desktop.PNG)
+
+![404 Error page results](assets/docs/404-desktop.PNG)
+
+* Mobile
+
+![Home page results](assets/docs/front-page-mob.PNG)
+
+![Quiz pages results](assets/docs/questions-mob.PNG)
+
+![404 Error page results](assets/docs/404-mob.PNG)
+
+#### Performance
+
+* I was very happy with my initial lighthouse scores.
+
+#### Accessibility
+
+* While writing my code, I was careful to ensure that it was fully accessible.
+* All text has good visibility on the backgrounds I chose.
+
+#### Best Practices
+
+* All images are shown in the correct aspect ratio, so as not to look stretched or pixelated.
+
+#### SEO
+
+* I ensured the site had all the relevant meta tags needed.
+* All font sizes are legible on all screen sizes.
 
 
 
