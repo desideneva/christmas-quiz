@@ -104,6 +104,13 @@ No matter where you are on your Christmas journey, the website aims to make your
 
 ![The Questions](assets/docs/quiestion1.PNG)
 
+* Only a few quiz questions are provided here; the remaining questions can be discovered by playing the quiz.
+
+![The Questions](assets/docs/question5.PNG)
+![The Questions](assets/docs/question7.PNG)
+![The Questions](assets/docs/question9.PNG)
+
+
 * In the quiz, when the correct answer is selected, it lights up in green, giving positive feedback. The "Next Question" button stays hidden until an answer is chosen. Once selected, it becomes visible, allowing the user to proceed to the next question.  
 
 ![The Questions](assets/docs/question2.PNG)
@@ -196,6 +203,7 @@ Here are some additional features you can consider adding to make your Christmas
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ### Version Control
 
@@ -219,7 +227,7 @@ Here are some additional features you can consider adding to make your Christmas
 This site was deployed using GitHub Pages with the following steps below:
 
 1. Login or Sign Up to [GitHub](www.github.com).
-2. Create a new repository named "taste-of-bulgaria".
+2. Create a new repository named "christmas-quiz".
 3. Once created, click on "Settings" on the navigation bar under the repository title.
 4. Click on "Pages", on the left-hand side below Secrets.
 5. Under "Source", choose which branch you wish to deploy, In most cases, it will be "main".
@@ -232,7 +240,7 @@ This site was deployed using GitHub Pages with the following steps below:
 If you need to make a copy of a repository:
 
 1. Login or Sign Up to [GitHub](www.github.com).
-2. On GitHub, go to [desideneva/taste-of-bulgaria](desideneva/taste-of-bulgaria).
+2. On GitHub, go to [desideneva/christmas-quiz](desideneva/christmas-quiz).
 3. In the top right corner, click "Fork".
 
 ### How to Make a Local Clone
