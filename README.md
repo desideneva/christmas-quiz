@@ -76,8 +76,7 @@ No matter where you are on your Christmas journey, the website aims to make your
 * To enjoy the Christmas quiz for a festive mood boost.
 * To share the quiz with others for a fun and informative experience.
 * To recommend the site to friends and family.
-* To gather information for projects.
-
+ 
 ## EXISTING FEATURES
 
 ### The Front Page Image

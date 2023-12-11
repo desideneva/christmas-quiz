@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     playButton.addEventListener('click', function () {
         // Navigate to the quiz.html page
         window.location.href = 'quiz.html';
-    });   
-        rulesButton.addEventListener("click", function () {
-            // Display the rules as bullet points in an alert
+    });
+    rulesButton.addEventListener("click", function () {
+        // Display the rules as bullet points in an alert
         const rules = [
             "  - Click the 'PLAY' button to begin the quiz.",
             "  - Read each question carefully.",
@@ -28,4 +28,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
- 
