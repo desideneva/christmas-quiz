@@ -373,7 +373,9 @@ The main guidance and instructions in this project were from [Code Institute](ht
 * The main structure of the quiz and the code were taken from the following YouTube tutorials:
 
   https://www.youtube.com/watch?v=PBcqGxrr9g8&t=22s
+
   https://www.youtube.com/watch?v=WiLTsxjCmWQ
+  
   https://www.youtube.com/watch?v=WHHYz8rZmDU
   
 * The Favicon was taken from [Favicon](https://icons8.com/icons/set/favicon)

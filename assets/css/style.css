@@ -39,7 +39,7 @@
      padding: 10px;
  }
 
- #playButton {
+ #play-btn {
      font-size: 1.5em;
      padding: 10px 20px;
      background-color: red;
@@ -50,11 +50,11 @@
      margin-top: 50px;
  }
 
- #playButton:hover {
+ #play-btn:hover {
      background-color: #45a049;
  }
 
- #rulesButton {
+ #rules-btn {
      font-size: 1.3em;
      padding: 10px 20px;
      background-color: red;
@@ -64,7 +64,7 @@
      cursor: pointer;
  }
 
- #rulesButton:hover {
+ #rules-btn:hover {
      background-color: rgb(177, 6, 6);
      color: white;
  }
@@ -142,7 +142,7 @@
      background: rgb(219, 89, 89);
  }
 
- #exitButton {
+ #exit-btn {
      background: red;
      color: white;
      font-weight: 500;
@@ -156,7 +156,7 @@
      display: block;
  }
 
- #exitButton:hover {
+ #exit-btn:hover {
      background-color: #45a049;
  }
 

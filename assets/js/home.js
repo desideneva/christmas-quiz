@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const playButton = document.getElementById('playButton');
-    const rulesButton = document.getElementById("rulesButton");
+    const playButton = document.getElementById('play-btn');
+    const rulesButton = document.getElementById("rules-btn");
     playButton.addEventListener('click', function () {
         // Navigate to the quiz.html page
         window.location.href = 'quiz.html';
