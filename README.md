@@ -305,8 +305,8 @@ Every aspect of the project was tested on the browsers below.
 | Buttons | Description | Action | Expected Result | Pass/Fail |
 | :-----: | :---------: | :----: | :-------------: | :--------: |
 | PLAY | Initiates the quiz, redirecting the user to the quiz page. | Click the "PLAY" button. | Redirects to the quiz page. | Pass |
-| Rules | Displays the rules of the quiz. | Click the "Rules" button. | Rules are shown in a popup window | Pass |
-| Next Question | Invisible button. It displays only when an answer is selected.Proceeds to the next question during the quiz. | Click the "Next Question" button. | Shows the next question. | Pass |
+| Rules | Displays the rules of the quiz. | Click the "Rules" button. | Rules are shown in a popup window. | Pass |
+| Next Question | Invisible button. It displays only when an answer is selected. Proceeds to the next question during the quiz. | Click the "Next Question" button. | Shows the next question. | Pass |
 | EXIT | Exits the quiz and redirects to the front page. | Click the "EXIT" button. | Redirects to the front page. | Pass |
 | Correct Count Display | Displays the current score of correct answers. | Automatically updates during the quiz incrementing by 1 for each correct choice. | Shows the correct count only. | Pass |
 
@@ -389,6 +389,8 @@ The main guidance and instructions in this project were from [Code Institute](ht
   https://www.youtube.com/watch?v=WiLTsxjCmWQ
   
   https://www.youtube.com/watch?v=WHHYz8rZmDU
+
+* The questions were taken from [Mentimeter](https://www.mentimeter.com/templates/p/christmas-quiz)  
   
 * The Favicon was taken from [Favicon](https://icons8.com/icons/set/favicon)
 
