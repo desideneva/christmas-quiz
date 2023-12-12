@@ -90,6 +90,9 @@
      border: 1px solid #888;
      width: 80%;
  }
+  .modal-content p {
+    text-align: left;
+  }
 
  /* The Close Button */
  .close {
