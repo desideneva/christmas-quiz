@@ -219,6 +219,8 @@ Here are some additional features you can consider adding to make your Christmas
 
 ![Balsamiq](https://img.shields.io/badge/Balsamiq%20-%23A60000.svg?&style=for-the-badge&logo=Balsamiq&logoColor=FFFFFF)
 
+[Christmas Quiz Wireframes](assets/docs/wireframes.pdf)
+
 ### Site Deployment
 
 ![GitHub Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
@@ -297,6 +299,16 @@ Every aspect of the project was tested on the browsers below.
 | Home Page | Pass | Pass |
 | Questions Pages | Pass | Pass |
 | Score Page | Pass | Pass |
+
+### Functionality
+
+| Buttons | Description | Action | Expected Result | Pass/Fail |
+| :-----: | :---------: | :----: | :-------------: | :--------: |
+| PLAY | Initiates the quiz, redirecting the user to the quiz page. | Click the "PLAY" button. | Redirects to the quiz page. | Pass |
+| Rules | Displays the rules of the quiz. | Click the "Rules" button. | Rules are shown in a popup window | Pass |
+| Next Question | Invisible button. It displays only when an answer is selected.Proceeds to the next question during the quiz. | Click the "Next Question" button. | Shows the next question. | Pass |
+| EXIT | Exits the quiz and redirects to the front page. | Click the "EXIT" button. | Redirects to the front page. | Pass |
+| Correct Count Display | Displays the current score of correct answers. | Automatically updates during the quiz incrementing by 1 for each correct choice. | Shows the correct count only. | Pass |
 
 ### Code Validators
 

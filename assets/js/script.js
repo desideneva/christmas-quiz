@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Add an event listener for the EXIT button
-    const exitButton = document.getElementById('exit-btn');
+    const exitButton = document.getElementById('exitButton');
     exitButton.addEventListener('click', function () {
         // Navigate back to the front page
         window.location.href = 'index.html'; // Replace 'index.html' with the actual front page filename
@@ -117,7 +117,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-const exitButton = document.getElementById("exit-btn");
+const exitButton = document.getElementById("exitButton");
 const scoreDisplay = document.getElementById("score-display");
 
 // Variables to track current question index and score

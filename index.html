@@ -24,12 +24,30 @@
             <h1>Christmas Quiz</h1>
             <h2>Hohoho! It's time to get in the festive mood!</h2>
         </header>
+          
         <!-- Button to start playing the quiz -->
-        <button id="play-btn">P L A Y</button>
+        <button id="playButton">P L A Y</button>
         <br>
         <br>
         <!-- Button to view the rules before starting the quiz -->
-        <button id="rules-btn">R u l e s</button>
+        <button id="rulesButton">R u l e s</button>
+          <!-- Rules container (hidden by default) -->
+          <div id="rulesContainer" class="hidden">
+            <h3>Rules</h3>
+            <ul>
+                <li>Click the 'PLAY' button to begin the quiz.</li>
+                <li>Read each question carefully.</li>
+                <li>Select an answer by clicking on one of the options.</li>
+                <li>If the correct answer is chosen, it will be highlighted in green.</li>
+                <li>If the wrong answer is chosen, it will be highlighted in red, and the correct answer will be highlighted in green.</li>
+                <li>You have only one attempt to select an answer.</li>
+                <li>Continue to the next question by clicking the 'Next Question' button.</li>
+                <li>You cannot skip any question.</li>
+                <li>You cannot go back to the past question.</li>
+                <li>To exit the quiz, click the 'EXIT' button.</li>
+                <li>Have fun!</li>
+            </ul>
+        </div>
     </div>
     <!-- JavaScript file for handling front page functionality -->
     <script src="assets/js/home.js"></script>
