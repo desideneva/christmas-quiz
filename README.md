@@ -196,6 +196,11 @@ Here are some additional features you can consider adding to make your Christmas
 
 * Solution: Reviewed and corrected the scoring logic in the selectAnswer() function, ensuring points were correctly awarded for correct answers.
 
+### Modal Content Not Scrollable
+
+* Bug: In the modal box displaying the quiz rules, the content wasn't scrollable, making it difficult for users to read all the rules if they extended beyond the viewport height.
+
+* Solution: Applied CSS styles to the modal content to ensure it becomes scrollable when the content exceeds the maximum height. Flexbox properties were used to allow vertical arrangement of the content and overflow-y: auto; was set to enable vertical scrolling.
 
 ## TECHNOLOGIES USED
 ### Languages
@@ -391,6 +396,8 @@ The main guidance and instructions in this project were from [Code Institute](ht
   https://www.youtube.com/watch?v=WHHYz8rZmDU
 
 * The questions were taken from [Mentimeter](https://www.mentimeter.com/templates/p/christmas-quiz)  
+
+* The modal box used for rules display was taken from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp)
   
 * The Favicon was taken from [Favicon](https://icons8.com/icons/set/favicon)
 
