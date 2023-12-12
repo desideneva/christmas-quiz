@@ -97,6 +97,7 @@
 
  .modal-content p {
      text-align: left;
+     margin-bottom: 1px;
  }
 
  /* The Close Button */
