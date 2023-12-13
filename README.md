@@ -367,7 +367,7 @@ The W3C Markup and CSS Validators were used to validate my project to make sure 
 
 ![Home page results](assets/docs/front-page-mob.PNG)
 
-![Quiz pages results](assets/docs/questions-mob.PNG)
+![Quiz pages results](assets/docs/question1-mob.PNG)
 
 ![404 Error page results](assets/docs/404-mob.PNG)
 

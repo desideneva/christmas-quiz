@@ -17,7 +17,7 @@ const questions = [
             { text: "Saint Nicholas", correct: false },
             { text: "Kris Kringle", correct: false },
         ],
-        image: "assets/images/santa-claus.png",
+        image: "assets/images/santa-claus.webp",
     },
     {
         question: "Which of the following is one of Santa’s reindeer?",
@@ -27,7 +27,7 @@ const questions = [
             { text: "Rudolph", correct: true },
             { text: "Sven", correct: false },
         ],
-        image: "assets/images/reindeer.png",
+        image: "assets/images/reindeer.webp",
 
     },
     {
@@ -38,7 +38,7 @@ const questions = [
             { text: "Norway", correct: false },
             { text: "Germany", correct: true },
         ],
-        image: "assets/images/christmas-trees.png",
+        image: "assets/images/christmas-trees.webp",
     },
     {
         question: "Who delivers Christmas presents to children in the United Kingdom?",
@@ -48,7 +48,7 @@ const questions = [
             { text: "Santa Claus", correct: true },
             { text: "Saint George", correct: false },
         ],
-        image: "assets/images/xmas-gifts.png",
+        image: "assets/images/xmas-gifts.webp",
     },
     {
         question: "What are you supposed to do when you find yourself under the mistletoe?",
@@ -58,7 +58,7 @@ const questions = [
             { text: "Dance", correct: false },
             { text: "Bow", correct: false },
         ],
-        image: "assets/images/xmas-sparks.png",
+        image: "assets/images/xmas-sparks.webp",
     },
     {
         question: "In what town was Jesus born?",
@@ -68,7 +68,7 @@ const questions = [
             { text: "Nazareth", correct: false },
             { text: "Bethlehem", correct: true },
         ],
-        image: "assets/images/stars.png",
+        image: "assets/images/stars.webp",
     },
     {
         question: "What was Frosty the Snowman's nose made out?",
@@ -78,7 +78,7 @@ const questions = [
             { text: "Sugar cane", correct: false },
             { text: "Coal", correct: false },
         ],
-        image: "assets/images/snowman.png",
+        image: "assets/images/snowman.webp",
     },
     {
         question: "What Christmas treat became popular due to a Brothers Grimm Story?",
@@ -88,7 +88,7 @@ const questions = [
             { text: "Gingerbread House", correct: true },
             { text: "Christmas Pudding", correct: false },
         ],
-        image: "assets/images/gingerbread-house.png",
+        image: "assets/images/gingerbread-house.webp",
     },
     {
         question: "What popular Christmas song was actually written for Thanksgiving?",
@@ -98,7 +98,7 @@ const questions = [
             { text: "Jingle Bells", correct: true },
             { text: "Underneath the tree", correct: false },
         ],
-        image: "assets/images/bells.png",
+        image: "assets/images/bells.webp",
     },
     {
         question: "How do you say Merry Christmas in Spanish?",
@@ -108,7 +108,7 @@ const questions = [
             { text: "Feliz Ano Nuevo", correct: false },
             { text: "Feliz Compleanos", correct: false },
         ],
-        image: "assets/images/merry-xmas-world.png",
+        image: "assets/images/merry-christmas.webp",
     }
 
 ];
@@ -240,7 +240,7 @@ function showScore() {
     resetState();
 
     // Set background image for the score screen
-    document.body.style.backgroundImage = `url("assets/images/santa-christmas.png")`;
+    document.body.style.backgroundImage = `url("assets/images/santa-christmas.webp")`;
 
     // Update the question element with the score
     if (score === questions.length) {
