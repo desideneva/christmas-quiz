@@ -6,7 +6,6 @@
  body {
      background-image: url(../images/christmas-twig-with-candle-present-boxes-1.webp);
      margin: 0;
-     padding: 100px 0;
      height: 100vh;
      background-size: cover;
      background-position: center;
@@ -17,6 +16,7 @@
 
  .container {
      text-align: center;
+     margin-top: 100px;
  }
 
  header {
