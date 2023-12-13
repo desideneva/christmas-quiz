@@ -93,9 +93,17 @@ No matter where you are on your Christmas journey, the website aims to make your
 
 ### The Rules Button
 
-* The rules button is like a guidebook. When you hover over it, it changes the background shade. Clicking it reveals a pop-up that explains what you need to know before diving into the Christmas quiz. It's like a friendly heads-up before you begin.
+* The rules button is like a guidebook. When you hover over it, it changes the background shade. 
 
-![Rules Button](assets/docs/rules-popup.PNG)
+![Rules Button](assets/docs/rules-btn-hovereffect.png)
+
+* Clicking it reveals a pop-up that explains what you need to know before diving into the Christmas quiz. It's like a friendly heads-up before you begin.
+
+![Popup rules](assets/docs/rules-popup.PNG)
+
+* The popup box becomes scrollable if the rules don't fit on the screen.
+
+![Scroll effect](assets/docs/rules-scroll-effect.PNG)
 
 ### The Quiz Questions
 
