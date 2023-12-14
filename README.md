@@ -101,7 +101,7 @@ No matter where you are on your Christmas journey, the website aims to make your
 
 ![Popup rules](assets/docs/rules-popup.PNG)
 
-* The popup box becomes scrollable when the content extends beyond the viewport height.
+* The pop-up box becomes scrollable when the content extends beyond the viewport height.
 
 ![Scroll effect](assets/docs/rules-scroll-effect.PNG)
 
@@ -319,6 +319,7 @@ Every aspect of the project was tested on the browsers below.
 | :-----: | :---------: | :----: | :-------------: | :--------: |
 | PLAY | Initiates the quiz, redirecting the user to the quiz page. | Click the "PLAY" button. | Redirects to the quiz page. | Pass |
 | Rules | Displays the rules of the quiz. | Click the "Rules" button. | Rules are shown in a popup window. | Pass |
+| "X" | User interface element located in the rules box | Click the "x" button. | The rules box closes, and the user returns to the quiz screen. | Pass |
 | Next Question | Invisible button. It displays only when an answer is selected. Proceeds to the next question during the quiz. | Click the "Next Question" button. | Shows the next question. | Pass |
 | EXIT | Exits the quiz and redirects to the front page. | Click the "EXIT" button. | Redirects to the front page. | Pass |
 | Correct Count Display | Displays the current score of correct answers. | Automatically updates during the quiz incrementing by 1 for each correct choice. | Shows the correct count only. | Pass |
@@ -352,6 +353,10 @@ The W3C Markup and CSS Validators were used to validate my project to make sure 
   * Quiz pages
 
    ![JavaScript](assets/docs/js-validation.PNG)
+
+### WAVE Testing
+
+![WAVE](assets/docs/accessibility-evaluation.PNG)
 
 ### Lighthouse Testing 
 
