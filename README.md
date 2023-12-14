@@ -111,14 +111,17 @@ No matter where you are on your Christmas journey, the website aims to make your
 
 ![The Questions](assets/docs/quiestion1.PNG)
 
-* Only a few quiz questions are provided here; the remaining questions can be discovered by playing the quiz.
+* Only a few quiz questions are provided here. The remaining questions can be discovered by playing the quiz.
 
 ![The Questions](assets/docs/question5.PNG)
 ![The Questions](assets/docs/question7.PNG)
 ![The Questions](assets/docs/question9.PNG)
 
+* Before an answer is selected, a visual indication enhances user experience. When a user hovers over an answer option with the mouse, the option is highlighted with a black shade, and the text appears in white. This visual cue helps users identify which answer they are about to select, improving clarity and interactivity in the quiz interface.
 
-* In the quiz, when the correct answer is selected, it lights up in green, giving positive feedback. The "Next Question" button stays hidden until an answer is chosen. Once selected, it becomes visible, allowing the user to proceed to the next question.  
+![The questions](assets/docs/preselect-hover-effect.png)
+
+* When the correct answer is selected, it lights up in green, giving positive feedback. The "Next Question" button stays hidden until an answer is chosen. Once selected, it becomes visible, allowing the user to proceed to the next question.  
 
 ![The Questions](assets/docs/question2.PNG)
 

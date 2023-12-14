@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = 'quiz.html';
   });
 });
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
