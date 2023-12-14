@@ -101,7 +101,7 @@ No matter where you are on your Christmas journey, the website aims to make your
 
 ![Popup rules](assets/docs/rules-popup.PNG)
 
-* The popup box becomes scrollable if the rules don't fit on the screen.
+* The popup box becomes scrollable when the content extends beyond the viewport height.
 
 ![Scroll effect](assets/docs/rules-scroll-effect.PNG)
 
@@ -142,7 +142,7 @@ No matter where you are on your Christmas journey, the website aims to make your
 
 ## FEATURES TO IMPLEMENT
 
-Here are some additional features you can consider adding to make your Christmas quiz more entertaining:
+Here are some additional features to consider adding to make the Christmas quiz more entertaining:
 
 ### Background Music:
 
